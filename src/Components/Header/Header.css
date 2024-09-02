@@ -8,6 +8,10 @@
 
 }
 
+.overflow_stop
+{
+    overflow-x: hidden !important;
+}
 .width_logo {
     width: 120px;
     padding-left: 10px;
@@ -188,9 +192,7 @@
     z-index: 1111;
     background-color: #003471;
     color: white;
-    height: 100vh;
-    bottom: 0vh;
-    left: 0px;
+    height: 100%;
     width: 100%;
 }
 

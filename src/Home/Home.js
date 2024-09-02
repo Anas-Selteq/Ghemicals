@@ -45,7 +45,7 @@ function Home() {
         }
     };
     return (
-        <div className='col-md-12'>
+        <div className='col-md-12 overflow_stop'>
             <Header />
 
             {/* Section 1 ------------------------------------------------------- */}

@@ -69,13 +69,17 @@ function Header() {
                             <img className='img-fluid width_logo' src='/images/logo.png' />
                         </div>
                         <div className='col-6 m-auto text-end px-4' onClick={TogglerNew}>
-                            <span className='buger_menu'><IoMenu /></span>
+                            <span className='buger_menu'>
+                                {toggler ? <RxCross2 /> :
+                                    <IoMenu />
+                                }
+                            </span>
                         </div>
                     </div>
                 </div>
                 {toggler === true ?
                     <div className='col-md-12 background_blue_position'>
-                        <div className='col-md-12 background_blue px-2'>
+                        {/* <div className='col-md-12 background_blue px-2'>
                             <div className='row'>
                                 <div className='col-6 py-4'>
                                     <img className='img-fluid width_logo' src='/images/logo.png' />
@@ -84,7 +88,7 @@ function Header() {
                                     <span className='buger_menu'><RxCross2 /></span>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='col-md-12 px-4'>
                             <h5 className='py-3' onClick={TogglerNew}>Home</h5>
                             <h5 className='py-3' onClick={TogglerNew}>Services</h5>
