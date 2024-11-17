@@ -1,17 +1,17 @@
 .header_background_orange {
-    background-color: #DA7426;
+    background-color: #4CBB17;
     height: 2vh;
 }
 
 .background_blue {
-    background-color: #003471;
+    background-color: black;
 
 }
 
-.overflow_stop
-{
+.overflow_stop {
     overflow-x: hidden !important;
 }
+
 .width_logo {
     width: 120px;
     padding-left: 10px;
@@ -23,7 +23,7 @@
     padding-right: 10px;
     padding-top: 6px;
     padding-bottom: 7.5px;
-    background-color: #159EC0;
+    background-color: #228822;
     border-radius: 50%;
     color: white;
 }
@@ -61,12 +61,24 @@
 .position_of_3rdnav {
     position: absolute;
     z-index: 1111;
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: #da742644;
     color: white;
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
     transition: all .3s;
+    font-weight: 600;
+}
+
+.position_of_3rdnav_other {
+    z-index: 1111;
+    background-color: #DA7426;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .3s;
+    font-weight: 600;
 }
 
 .image_slider_front {
@@ -76,6 +88,12 @@
     background-repeat: no-repeat;
     padding-top: 12%;
     padding-bottom: 12%;
+}
+
+.vedioPlayer {
+    width: 100%;
+    height: 40% !important;
+    position: relative;
 }
 
 .color_white_text {
@@ -93,18 +111,37 @@
 
 .button_cutome {
     background-color: white !important;
-    border-radius: 0px !important;
+    border-radius: 8px !important;
 }
 
 .button_cutome1 {
     background-color: #DA7426;
-    border-radius: 0px !important;
+    border-radius: 8px !important;
     color: white !important;
     border: 1px solid #DA7426;
 }
 
+
+.button_cutome_black {
+    background-color: black;
+    border-radius: 8px !important;
+    color: white !important;
+    border: 1px solid black;
+}
+
+.border_for_image {
+    border: 3px solid #DA7426;
+    border-radius: 10px;
+}
+
+.border_for_image1 {
+    border: 3px solid #4CBB17;
+    border-radius: 10px;
+}
+
+
 .color_towerld {
-    color: #DA7426;
+    color: #4CBB17;
 }
 
 .font_for_p {
@@ -113,31 +150,44 @@
 }
 
 .backgrou_blue_section3 {
-    background-color: #003471;
+    background-color: black;
 }
 
 .button_white_tabs {
     border-radius: 0px;
     padding-top: 1.5px;
     padding-bottom: 1.5px;
+    background-color: #DA7426 !important;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+
 }
 
 .button_white_tabs_unactive {
-    background-color: #003471 !important;
+    background-color: #4CBB17 !important;
     border-radius: 0px;
     padding-top: 1.5px;
     padding-bottom: 1.5px;
-    color: white;
+    color: black;
     border: none !important;
+    font-weight: 600;
+    border-radius: 8px;
 }
 
 .button_white_tabs_unactive:hover {
-    background-color: #003471 !important;
+    background-color: #228822 !important;
     border-radius: 0px;
     padding-top: 1.5px;
     padding-bottom: 1.5px;
-    color: white;
+    color: black;
     border: none !important;
+    border-radius: 8px;
+}
+
+.border_for_c_image {
+    border-radius: 8px;
+    height: 310px;
 }
 
 .padding_top_card {
@@ -162,11 +212,11 @@
 }
 
 .background_for_maps {
-    background-color: #003471;
+    background-color: black;
 }
 
 .border_for_lg {
-    border-radius: 0px !important;
+    border-radius: 8px !important;
 }
 
 .background_footer {
@@ -176,27 +226,84 @@
 .display_pc {
     display: block;
 }
+
 .display_mobile {
     display: none;
 }
 
-.buger_menu
-{
+.buger_menu {
     color: white !important;
     font-size: 25px;
 }
 
-.background_blue_position
-{
+.background_blue_position {
     position: absolute;
     z-index: 1111;
-    background-color: #003471;
+    background-color: #228822;
     color: white;
     height: 100%;
     width: 100%;
 }
 
+.heightadjustment {
+    display: -webkit-box;
+    /* Enable flex context for the box */
+    -webkit-box-orient: vertical;
+    /* Set the box to stack vertically */
+    overflow: hidden;
+    /* Hide overflow text */
+    text-overflow: ellipsis;
+    /* Add ellipsis at the end of the truncated text */
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines */
+    line-height: 1.5;
+    /* Set the line height (adjust as needed) */
+    max-height: calc(1.5em * 3);
+    /* Ensure max height matches the number of lines */
+}
+
+.height_adjustment_icons {
+    font-size: 52px;
+}
+
+.font_for_all_services {
+    color: rgb(95, 95, 95);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.img_size_set_New {
+    fill: rgb(95, 95, 95) !important;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+
+}
+
+.background_ff {
+    background-color: #4CBB17;
+    text-align: center;
+    color: black;
+}
+
+.position_for_mobile {
+    position: absolute;
+    top: 50%
+}
+
 @media only screen and (max-width: 600px) {
+    .position_for_mobile {
+        position: relative;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        background-image: url(../../../public/images/hero/Background.png);
+        background-size: cover;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
     .display_mobile {
         display: block;
     }
@@ -211,6 +318,7 @@
         padding-right: 0%;
         text-align: center;
     }
+
     .image_slider_front {
         background-image: url(../../../public/images/slider-bg.jpg);
         background-size: cover;
@@ -219,6 +327,6 @@
         padding-top: 35%;
         padding-bottom: 35%;
     }
-    
+
 
 }
