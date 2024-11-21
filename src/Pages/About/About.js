@@ -1,12 +1,35 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 
 function About() {
+    const [toggler, setToggler] = useState(false)
+
+    const TogglerNew = () => {
+        setToggler(!toggler)
+    }
+
+    const servicesRef = useRef(null);
+    const productsRef = useRef(null);
+    const contactRef = useRef(null);
+
+    const handleScrollToSection = (section) => {
+        if (section === 'services') {
+            servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
+            TogglerNew();
+        } else if (section === 'portfolio') {
+            productsRef.current?.scrollIntoView({ behavior: 'smooth' });
+            TogglerNew();
+        }
+        else if (section === 'contact') {
+            contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+            TogglerNew();
+        }
+    };
     return (
         <div className='col-md-12 overcontrol'>
             <div className='col-md-12 pb-4'>
-                <Header />
+                <Header onNavigate={handleScrollToSection} TogglerNew={TogglerNew} toggler={toggler} />
 
 
                 <div className='col-md-12 padding_top_bottom_left_right_products mb-5 pt-5'>
@@ -25,9 +48,6 @@ function About() {
                             <p className='font_for_p'>
                                 <b><i>"Your Growth Starts Here—Send Us Your RFQ and Watch Your Business Thrive!"</i></b>
                             </p>
-                            <span className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
-                                Read More
-                            </span>
                         </div>
                         <div className='col-md-6 m-md-auto   text-center'>
                             <img className='img-fluid border_for_image' src='/images/g12.jpg' />
@@ -51,9 +71,6 @@ function About() {
                             <p className='font_for_p'>
                                 <b><i>"Ready to Rock Your Industry? Contact Us Today and Let’s Get Started!"</i></b>
                             </p>
-                            <span className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
-                                Read More
-                            </span>
                         </div>
 
                     </div>
@@ -72,9 +89,6 @@ function About() {
                             <p className='font_for_p'>
                                 <b><i>"Your Reliable Source for Premium Chemicals—Let’s Talk Solutions! "</i></b>
                             </p>
-                            <span className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
-                                Read More
-                            </span>
                         </div>
                         <div className='col-md-6 m-md-auto   text-center'>
                             <img className='img-fluid border_for_image' src='/images/g11.jpg' />
@@ -87,21 +101,18 @@ function About() {
                         <div className='col-md-6 m-auto '>
                             <h2><b>Why GEMICALS?</b></h2>
                             <p className='font_for_p'>
-                              <ul>
-                                <li>Diverse Product Selection</li>
-                                <li>Tailored Solutions</li>
-                                <li>Top-Quality Assurance</li>
-                                <li>On-Time Delivery</li>
-                                <li>Extensive Product Portfolio</li>
-                                <li>Reliability</li>
-                                <li>Expert Guidance</li>
-                                <li>Competitive Pricing</li>
-                              </ul>
+                                <ul>
+                                    <li>Diverse Product Selection</li>
+                                    <li>Tailored Solutions</li>
+                                    <li>Top-Quality Assurance</li>
+                                    <li>On-Time Delivery</li>
+                                    <li>Extensive Product Portfolio</li>
+                                    <li>Reliability</li>
+                                    <li>Expert Guidance</li>
+                                    <li>Competitive Pricing</li>
+                                </ul>
                             </p>
-                           
-                            <span className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
-                                Read More
-                            </span>
+
                         </div>
 
                     </div>

@@ -12,10 +12,12 @@ import { BiLabel } from 'react-icons/bi';
 import { IoDocumentsOutline } from 'react-icons/io5';
 import Footer from '../Components/Footer/Footer';
 import { Typewriter } from 'react-simple-typewriter';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
     const [activetabs, setActivetabs] = useState(0)
     const [toggler, setToggler] = useState(false)
+    const Navigate = useNavigate();
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -77,10 +79,16 @@ function Home() {
         }
     };
 
+    const Readmorebutton = () =>{
+        Navigate("/About-us")
+    }
+
+   
+
 
     return (
         <div className='col-md-12 overflow_stop'>
-            <Header onNavigate={handleScrollToSection} TogglerNew={TogglerNew} toggler={toggler} />
+            <Header onNavigate={handleScrollToSection} TogglerNew={TogglerNew} toggler={toggler}  />
 
             {/* Section 1 ------------------------------------------------------- */}
             <div className='col-md-12 '>
@@ -116,10 +124,10 @@ function Home() {
                         </b>
                     </h1>
                     <div className='col-md-12 text-center pt-5'>
-                        <span className='btn btn-light btn-lg button_cutome1 px-md-5 mt-3'>
+                        <span onClick={Readmorebutton} className='btn btn-light btn-lg button_cutome1 px-md-5 mt-3'>
                             Read More
                         </span>
-                        <span className='btn btn-light btn-lg button_cutome px-md-5 mt-3 ms-4'>
+                        <span onClick={() => handleScrollToSection('contact')} className='btn btn-light btn-lg button_cutome px-md-5 mt-3 ms-4'>
                             Contact Us
                         </span>
                     </div>
@@ -220,7 +228,7 @@ function Home() {
                         <p className='m-0 p-0 font_for_all_services'>Foam & Mattress</p>
                     </div>
                     <div className='col-md-1 col-4 pt-2 text-center'>
-                        <img className='img-fluid img_size_set_New' src='/images/icons/Feed & Fertilizer.svg' />
+                        <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' />
                         <p className='m-0 p-0 font_for_all_services'>Feed & Fertilizer</p>
                     </div>
                     <div className='col-md-1 col-4 pt-2 text-center'>
@@ -254,7 +262,7 @@ function Home() {
                         <p className='m-0 p-0 font_for_all_services'>Food & Beverage</p>
                     </div>
                     <div className='col-md-1 col-4 pt-2 text-center'>
-                        <img className='img-fluid img_size_set_New' src='/images/icons/Adhesive, Sealants & Rubber.svg' />
+                        <img className='img-fluid img_size_set_New' src='/images/icons/Adhesive.svg' />
                         <p className='m-0 p-0 font_for_all_services'>Adhesive</p>
                     </div>
                     <div className='col-md-1 col-4 pt-2 text-center'>
@@ -262,7 +270,7 @@ function Home() {
                         <p className='m-0 p-0 font_for_all_services'>Agricultural & Fertilizers</p>
                     </div>
                     <div className='col-md-1 col-4 pt-2 text-center'>
-                        <img className='img-fluid img_size_set_New' src='/images/icons/Insecticides & Herbicides (Pesticides).svg' />
+                        <img className='img-fluid img_size_set_New' src='/images/icons/Insecticides & Herbicides.svg' />
                         <p className='m-0 p-0 font_for_all_services'>Insecticides & Herbicides (Pesticides)</p>
                     </div>
                 </div>
@@ -280,7 +288,7 @@ function Home() {
                         <p className='font_for_p'>
                             <b><i>"We are One Stop Shop for all your Chemical needs!"</i></b>
                         </p>
-                        <span className='btn btn-light btn-lg button_cutome_black px-5 mt-3 mb-md-0 mb-4'>
+                        <span  onClick={Readmorebutton}  className='btn btn-light btn-lg button_cutome_black px-5 mt-3 mb-md-0 mb-4'>
                             Read More
                         </span>
                     </div>
@@ -290,7 +298,7 @@ function Home() {
                 </div>
                 <div className='row pt-5'>
                     <div className='col-md-6 m-md-auto  '>
-                        <img className='img-fluid border_for_image1' src='/images/g1.jpg' />
+                        <img className='img-fluid border_for_image1' src='/images/g10.jpg' />
                     </div>
                     <div className='col-md-6 m-auto mt-4 '>
                         <h2><b>Our Expertise</b></h2>
@@ -303,7 +311,7 @@ function Home() {
                         <p className='font_for_p'>
                             <b><i>"Time to Level Up—Get in Touch and Experience Top-Quality Chemicals!"</i></b>
                         </p>
-                        <span className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
+                        <span  onClick={Readmorebutton}  className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
                             Read More
                         </span>
                     </div>
@@ -318,9 +326,15 @@ function Home() {
                 </div>
                 <div className='col-md-12 text-center py-4'>
                     <span className={`btn btn-light ${activetabs === 0 ? "button_white_tabs" : "button_white_tabs_unactive"}`}>ALL</span>
-                    <span className={`btn btn-light ${activetabs === 1 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>DECORATIVE</span>
-                    <span className={`btn btn-light ${activetabs === 2 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>FACADES</span>
-                    <span className={`btn btn-light ${activetabs === 3 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>RAILINGS</span>
+                    <span className={`btn btn-light ${activetabs === 1 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Acids</span>
+                    <span className={`btn btn-light ${activetabs === 2 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Alkalis</span>
+                    <span className={`btn btn-light ${activetabs === 3 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Solvents</span>
+                    <span className={`btn btn-light ${activetabs === 1 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Bulk Chemicals</span>
+                    <span className={`btn btn-light ${activetabs === 2 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Specialties</span>
+                    <span className={`btn btn-light ${activetabs === 3 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Additives</span>
+                    <span className={`btn btn-light ${activetabs === 1 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Catalysts</span>
+                    <span className={`btn btn-light ${activetabs === 2 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Enzymes</span>
+                    <span className={`btn btn-light ${activetabs === 3 ? "button_white_tabs ms-4" : "button_white_tabs_unactive ms-4"}`}>Refrigerant Gases</span>
                 </div>
                 <div className='col-md-12 pt-3 pb-3'>
                     <Carousel
@@ -506,11 +520,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-12 color_white_text mt-4 text-center'>
-                    <span className='btn btn-light btn-lg button_cutome1 px-5 mt-3'>
-                        Read More
-                    </span>
-                </div>
+                
             </div>
 
             {/* Section 5 --------------------------------------- */}
@@ -522,7 +532,7 @@ function Home() {
                     <div className='row'>
                         <div className='col-md-6  background_for_maps px-4'>
                             <div className='col-md-12 pt-5'>
-                                <input className='form-control form-control-lg border_for_lg' placeholder='Your Company Name Name' />
+                                <input className='form-control form-control-lg border_for_lg' placeholder='Your Company Name' />
                             </div>
                             <div className='row '>
                                 <div className='col-md-6 pt-3 '>
@@ -548,7 +558,7 @@ function Home() {
                             </div>
                             <div className='col-md-12 mt-3 pb-5'>
                                 <span className='btn btn-light btn-lg button_cutome1 px-5 '>
-                                    SEND
+                                    Submit
                                 </span>
                             </div>
                         </div>

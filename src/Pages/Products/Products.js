@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import "./Products.css"
 import { CiDeliveryTruck } from 'react-icons/ci'
@@ -13,10 +13,35 @@ import { IoFastFoodOutline } from 'react-icons/io5'
 import { TbPerfume } from 'react-icons/tb'
 
 function Products() {
+    const servicesRef = useRef(null);
+    const productsRef = useRef(null);
+    const contactRef = useRef(null);
+    const [toggler, setToggler] = useState(false)
+
+    const TogglerNew = () => {
+        setToggler(!toggler)
+    }
+
+
+    const handleScrollToSection = (section) => {
+        if (section === 'services') {
+            servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
+            TogglerNew();
+        } else if (section === 'portfolio') {
+            productsRef.current?.scrollIntoView({ behavior: 'smooth' });
+            TogglerNew();
+        }
+        else if (section === 'contact') {
+            contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+            TogglerNew();
+        }
+    };
+
+
     return (
         <div className='col-md-12 overcontrol'>
             <div className='col-md-12 pb-4'>
-                <Header />
+                <Header onNavigate={handleScrollToSection} TogglerNew={TogglerNew} toggler={toggler} />
 
                 <div className='col-md-12 padding_top_bottom_left_right_products pt-4 '>
                     <h2><b>Welcome to<br /><span className='color_towerld'>Our Product</span></b></h2>

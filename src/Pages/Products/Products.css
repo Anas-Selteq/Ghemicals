@@ -21,7 +21,34 @@
     border-radius: 8px;
 }
 
-.overcontrol
-{
+.overcontrol {
     overflow-x: hidden !important;
+}
+
+.alignment3 {
+    text-align: right;
+}
+
+.alignment2 {
+    text-align: center;
+}
+
+.alignment1 {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .alignment3 {
+        padding-top: 12px;
+        text-align: center;
+    }
+
+    .alignment2 {
+        text-align: center;
+    }
+
+    .alignment1 {
+        text-align: center !important;
+    }
+
 }

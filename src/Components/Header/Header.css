@@ -238,7 +238,7 @@
 
 .background_blue_position {
     position: absolute;
-    z-index: 1111;
+    z-index: 11;
     background-color: #228822;
     color: white;
     height: 100%;
