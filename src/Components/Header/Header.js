@@ -34,34 +34,43 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                             <div className='width_set1 '>
                                 <img className='img-fluid width_logo' src='/images/log.svg' />
                             </div>
-                            <div className=' width_set2  pt-2'>
-                                <span className='widdth_height_bg'>
-                                    <IoLocationSharp />
-                                </span>
-                                <span className='location_text'>JINC3475</span>
+
+                            <div className=' width_set2  pt-3'>
+                                <a className='text_dec_stop' target="_blank" href="https://www.google.com/maps?ll=21.481954,39.210108&z=15&t=m&hl=en&gl=US&mapclient=embed&q=21%C2%B028%2755.0%22N+39%C2%B012%2745.7%22E+21.481944,+39.212694@21.4819444,39.2126944">
+                                    <span className='widdth_height_bg'>
+                                        <IoLocationSharp />
+                                    </span>
+                                    <span className='location_text'>JINC3475</span>
+                                </a>
                             </div>
-                            <div className=' width_set3 pt-2' >
-                                <span className='widdth_height_bg'>
-                                    <IoMdCall />
-                                </span>
-                                <span className='location_text'>Call: +966 53 277 6424</span>
+                            <div className=' width_set3 pt-3' >
+                                <a className='text_dec_stop' href="tel:+966532776424">
+                                    <span className='widdth_height_bg'>
+                                        <IoMdCall />
+                                    </span>
+                                    <span className='location_text'>Call: +966 53 277 6424</span>
+                                </a>
                             </div>
-                            <div className='width_set5 pt-2'>
-                                <span className='widdth_height_bg'>
-                                    <MdEmail />
-                                </span>
-                                <span className='location_text'>info@gemicals.com</span>
+                            <div className='width_set5 pt-3'>
+                                <a className='text_dec_stop' href="mailto:info@gemicals.com">
+                                    <span className='widdth_height_bg'>
+                                        <MdEmail />
+                                    </span>
+                                    <span className='location_text'>info@gemicals.com</span>
+                                </a>
                             </div>
 
                         </div>
                     </div>
                     <div className={`col-md-12 py-3 ${location?.pathname === "/" ? "position_of_3rdnav" : "position_of_3rdnav_other"}`} >
                         <span ><Link className='text_dec_stop' to="/">Home</Link></span>
-                        <span className='ps-5' onClick={() => onNavigate('services')}>Services</span>
                         <span className='ps-5'><Link className='text_dec_stop' to="/About-us">About</Link></span>
                         <span className='ps-5'><Link className='text_dec_stop' to="/products">Products</Link></span>
-                        <span className='ps-5' onClick={() => onNavigate('portfolio')}>Portofolio</span>
-                        <span className='ps-5' onClick={() => { location?.pathname === "/products" || location?.pathname === "/About-us" ? handleShow() : onNavigate('contact') }}>Contact US</span>
+                        <span className='ps-5' ><Link className='text_dec_stop' to="/services">Services</Link></span>
+
+
+                        {/* <span className='ps-5' onClick={() => onNavigate('portfolio')}>Portofolio</span> */}
+                        <span className='ps-5'><Link className='text_dec_stop' to="/contact-us">Contact US</Link></span>
                     </div>
                 </div>
             </div>
@@ -97,11 +106,12 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                         </div> */}
                         <div className='col-md-12 px-4'>
                             <h5 className='py-3' onClick={TogglerNew}><Link className='text_dec_stop' to="/">Home</Link></h5>
-                            <h5 className='py-3' onClick={() => { onNavigate('services') }}>Services</h5>
-                            <h5 className='py-3' onClick={TogglerNew}><Link className='text_dec_stop' to="/products">Products</Link></h5>
                             <h5 className='py-3' onClick={TogglerNew}><Link className='text_dec_stop' to="/About-us">About</Link></h5>
-                            <h5 className='py-3' onClick={() => { onNavigate('portfolio') }}>Portfolio</h5>
-                            <h5 className='py-3' onClick={() => { location?.pathname === "/products" || location?.pathname === "/About-us" ? handleShow() : onNavigate('contact') }}>Contact Us</h5>
+                            <h5 className='py-3' onClick={TogglerNew}><Link className='text_dec_stop' to="/products">Products</Link></h5>
+                            <h5 className='py-3' ><Link className='text_dec_stop' to="/services">Servicses</Link></h5>
+
+                            {/* <h5 className='py-3' onClick={() => { onNavigate('portfolio') }}>Portfolio</h5> */}
+                            <h5 className='py-3' ><Link className='text_dec_stop' to="/contact-us">Contact Us</Link></h5>
                         </div>
                     </div>
                     : null}

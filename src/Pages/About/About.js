@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
+import { LiaIndustrySolid } from 'react-icons/lia'
+import { FaArrowRight } from 'react-icons/fa'
 
 function About() {
     const [toggler, setToggler] = useState(false)
@@ -55,7 +57,7 @@ function About() {
                     </div>
                     <div className='row pt-5'>
                         <div className='col-md-6 m-md-auto  '>
-                            <img className='img-fluid border_for_image1' src='/images/g2.jpg' />
+                            <img className='img-fluid border_for_image1' src='/images/g8.jpg' />
                         </div>
                         <div className='col-md-6 m-auto '>
 
@@ -118,6 +120,8 @@ function About() {
                     </div>
 
                 </div>
+
+                
 
 
             </div>
