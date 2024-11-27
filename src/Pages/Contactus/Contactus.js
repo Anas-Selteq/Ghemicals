@@ -31,7 +31,7 @@ function Contactus() {
         }
     };
     return (
-        <div className='col-md-12'>
+        <div className='col-md-12 background_for_contact'>
             <Header onNavigate={handleScrollToSection} TogglerNew={TogglerNew} toggler={toggler} />
             <div className='col-md-12 '>
                 <div className='row'>

@@ -190,102 +190,7 @@ function Home() {
                 </Carousel> */}
             </div>
             {/* Section 2 ----------------------------------------------------------- */}
-            <div className='col-md-12 py-1 px-5 display_pc '>
-                <div className='col-md-12 px-5 pt-5'>
-                    <div className='row'>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Paints & Coating.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Paints & Coating</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Inks & Printing.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Inks & Printing </p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Soap & Detergent.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Soap & Detergent</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Laundry, Cleaning & Janitorial.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Laundry, Cleaning & Janitorial </p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Water Treatment.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Water Treatment </p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Construction.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Construction</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Ceramic & Marble.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Ceramic & Marble</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Plastic & Polymers.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Plastic & Polymers</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Glass & Composites.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Glass & Composites</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Packing & Corrugate.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Packing & Corrugate</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Foam & Mattress.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Foam & Mattress</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Feed & Fertilizer</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Oil & Gas.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Oil & Gas</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Pharmaceuticals & Healthcare.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Pharmaceuticals & Healthcare</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Personal Care & Cosmetic.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Personal Care & Cosmetic</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Mining & Drilling.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Mining & Drilling</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/HVAC.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>HVAC, Refrigeration & Cold Storage</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Metal & Alloys.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Metal & Alloys</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Food & Beverage.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Food & Beverage</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Adhesive.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Adhesive</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Agricultural & Fertilizers</p>
-                        </div>
-                        <div className='col-md-2 col-4 pt-4 text-center'>
-                            <img className='img-fluid img_size_set_New' src='/images/icons/Insecticides & Herbicides.svg' />
-                            <p className='m-0 p-0 font_for_all_services'>Insecticides & Herbicides (Pesticides)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div className='col-md-12 padding_top_bottom_left_right'>
                 <div className='row'>
                     <div className='col-md-6 m-auto '>
@@ -307,12 +212,115 @@ function Home() {
                         <img className='img-fluid border_for_image' src='/images/g13.jpg' />
                     </div>
                 </div>
+
+                <div className='col-md-12 pt-5 mt-4 display_pc '>
+                    <div className='col-md-12 pb-4 text-center'>
+                        <h2><b>Welcome to <span className='color_towerld'>Industries</span></b></h2>
+                    </div>
+                    <div className='col-md-12 '>
+                        <div className='row'>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Paints & Coating.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Paints & Coating</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Inks & Printing.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Inks & Printing </p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Soap & Detergent.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Soap & Detergent</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Laundry, Cleaning & Janitorial.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Laundry, Cleaning & Janitorial </p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Water Treatment.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Water Treatment </p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Construction.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Construction</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Ceramic & Marble.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Ceramic & Marble</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Plastic & Polymers.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Plastic & Polymers</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Glass & Composites.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Glass & Composites</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Packing & Corrugate.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Packing & Corrugate</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Foam & Mattress.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Foam & Mattress</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Feed & Fertilizer</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Oil & Gas.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Oil & Gas</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Pharmaceuticals & Healthcare.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Pharmaceuticals & Healthcare</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Personal Care & Cosmetic.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Personal Care & Cosmetic</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Mining & Drilling.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Mining & Drilling</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/HVAC.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>HVAC, Refrigeration & Cold Storage</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Metal & Alloys.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Metal & Alloys</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Food & Beverage.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Food & Beverage</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Adhesive.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Adhesive</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Agricultural & Fertilizers</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                <img className='img-fluid img_size_set_New' src='/images/icons/Insecticides & Herbicides.svg' />
+                                <p className='m-0 p-0 font_for_all_services'>Insecticides & Herbicides (Pesticides)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div className='row pt-5'>
                     <div className='col-md-6 m-md-auto  '>
                         <img className='img-fluid border_for_image1' src='/images/g10.jpg' />
                     </div>
                     <div className='col-md-6 m-auto mt-4 '>
-                        <h2><b>Our Expertise</b></h2>
+                        <h2><b>Our <span className='color_towerld'>Expertise</span></b></h2>
                         <p className='font_for_p'>
                             With over 25 years of experience in chemical distribution, we have a trusted name in the industry. Our extensive global network and the commitment to quality ensure that we meet the needs of clients across various industrial sectors.
                         </p>
@@ -322,13 +330,15 @@ function Home() {
                         <p className='font_for_p'>
                             <b><i>"Time to Level Up—Get in Touch and Experience Top-Quality Chemicals!"</i></b>
                         </p>
-                        <span onClick={servicelink} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
+                        <span onClick={Readmorebutton} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
                             Read More
                         </span>
                     </div>
 
                 </div>
             </div>
+
+
 
             {/* Section 3 --------------------------------------- */}
             <div className='col-md-12 backgrou_blue_section3' ref={productsRef}>
@@ -520,7 +530,7 @@ function Home() {
                             </div>
                         </div>
                         <div className='col-md-4 mt-4'>
-                         
+
                         </div>
                         <div className='col-md-4 mt-4'>
                             <div className='col-md-12 padding_top_card'>
@@ -533,8 +543,8 @@ function Home() {
                         </div>
                     </div>
                     <div className='col-md-12 text-center'>
-                        <span onClick={servicelink} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
-                            Read More
+                        <span onClick={productsbutton} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
+                            Our Products
                         </span>
                     </div>
                 </div>

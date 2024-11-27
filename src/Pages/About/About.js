@@ -1,8 +1,9 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import { LiaIndustrySolid } from 'react-icons/lia'
 import { FaArrowRight } from 'react-icons/fa'
+import { Navigate } from 'react-router-dom'
 
 function About() {
     const [toggler, setToggler] = useState(false)
@@ -28,6 +29,14 @@ function About() {
             TogglerNew();
         }
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []);
+
+    const productsbutton = () => {
+        Navigate("/products")
+    }
     return (
         <div className='col-md-12 overcontrol'>
             <div className='col-md-12 pb-4'>
@@ -37,7 +46,7 @@ function About() {
                 <div className='col-md-12 padding_top_bottom_left_right_products mb-5 pt-5'>
                     <div className='row'>
                         <div className='col-md-6 m-auto '>
-                            <h2><b>About Us</b></h2>
+                            <h2><b>About <span className='color_towerld'>Us</span></b></h2>
                             <p className='font_for_p'>
                                 With 30+ years of experience in the industry, we have grown quite impressively by becoming the leading chemical distributor providing solutions for users of industrial and specialty chemicals.
                             </p>
@@ -78,7 +87,7 @@ function About() {
                     </div>
                     <div className='row pt-5'>
                         <div className='col-md-6 m-auto '>
-                            <h2><b>Company Overview</b></h2>
+                            <h2><b>Company <span className='color_towerld'>Overview</span></b></h2>
                             <p className='font_for_p'>
                                 Gemicals began as a small regional supplier of Chloro Alkali chemicals. Over the years, we have expanded our operations to become a market leader, serving industries from coating manufacturers to refining heavy hydrocarbons and beyond. Our growth has been driven by our unwavering commitment to quality and customer satisfaction.
                             </p>
@@ -101,7 +110,7 @@ function About() {
                             <img className='img-fluid border_for_image1' src='/images/g2.jpg' />
                         </div>
                         <div className='col-md-6 m-auto '>
-                            <h2><b>Why GEMICALS?</b></h2>
+                            <h2><b>Why <span className='color_towerld'>GEMICALS?</span></b></h2>
                             <p className='font_for_p'>
                                 <ul>
                                     <li>Diverse Product Selection</li>
@@ -119,9 +128,61 @@ function About() {
 
                     </div>
 
+
+                    <div className='col-md-12'>
+                        <div className='col-md-12 text-center pt-5 mt-3 '>
+                            <h2><b>Get In <span className='color_towerld'>Touch</span></b></h2>
+                        </div>
+                        <div className='col-md-12  mt-5 mb-5 pb-2'>
+                            <div className='row'>
+                                <div className='col-md-6  background_for_maps px-4'>
+                                    <div className='col-md-12 pt-5'>
+                                        <input className='form-control form-control-lg border_for_lg' placeholder='Your Company Name' />
+                                    </div>
+                                    <div className='row '>
+                                        <div className='col-md-6 pt-3 '>
+                                            <input className='form-control form-control-lg border_for_lg' placeholder='Industry' />
+                                        </div>
+                                        <div className='col-md-6 pt-3'>
+                                            <input className='form-control form-control-lg border_for_lg' placeholder='Your Name' />
+                                        </div>
+                                    </div>
+                                    <div className='col-md-12 pt-3'>
+                                        <input className='form-control form-control-lg border_for_lg' placeholder='Position' />
+                                    </div>
+                                    <div className='row '>
+                                        <div className='col-md-6 pt-3 '>
+                                            <input className='form-control form-control-lg border_for_lg' placeholder='Email Address' />
+                                        </div>
+                                        <div className='col-md-6 pt-3'>
+                                            <input className='form-control form-control-lg border_for_lg' placeholder='Telephone No' />
+                                        </div>
+                                    </div>
+                                    <div className='col-md-12 pt-3'>
+                                        <textarea className='form-control form-control-lg border_for_lg' placeholder='Message' ></textarea>
+                                    </div>
+                                    <div className='col-md-12 mt-3 pb-5'>
+                                        <span className='btn btn-light btn-lg button_cutome1 px-5 '>
+                                            Submit
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className='col-md-6 ps-0 pe-0'>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3712.6574328185025!2d39.21010757526909!3d21.481954080283202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDI4JzU1LjAiTiAzOcKwMTInNDUuNyJF!5e0!3m2!1sen!2s!4v1731845523830!5m2!1sen!2s" style={{ height: "100%", width: "100%" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-md-12 text-center py-5'>
+                        <span onClick={productsbutton} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
+                            Our Products
+                        </span>
+                    </div>
+
                 </div>
 
-                
+
 
 
             </div>

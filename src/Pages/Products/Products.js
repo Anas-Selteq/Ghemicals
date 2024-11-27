@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import "./Products.css"
 import { CiDeliveryTruck } from 'react-icons/ci'
@@ -11,6 +11,7 @@ import { PiPaintBucket } from 'react-icons/pi'
 import { MdOutlineCleaningServices, MdOutlineConstruction, MdOutlinePersonalInjury } from 'react-icons/md'
 import { IoFastFoodOutline } from 'react-icons/io5'
 import { TbPerfume } from 'react-icons/tb'
+import { Navigate } from 'react-router-dom'
 
 function Products() {
     const servicesRef = useRef(null);
@@ -36,7 +37,13 @@ function Products() {
             TogglerNew();
         }
     };
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []);
 
+    const productsbutton = () => {
+        Navigate("/products")
+    }
 
     return (
         <div className='col-md-12 overcontrol'>
@@ -276,6 +283,56 @@ function Products() {
                     </div>
                 </div>
 
+                <div className='col-md-12 padding_top_bottom_left_right_products'>
+                    <div className='col-md-12 text-center pt-5 mt-3 '>
+                        <h2><b>Get In <span className='color_towerld'>Touch</span></b></h2>
+                    </div>
+                    <div className='col-md-12  mt-5 mb-5 pb-2'>
+                        <div className='row'>
+                            <div className='col-md-6  background_for_maps px-4'>
+                                <div className='col-md-12 pt-5'>
+                                    <input className='form-control form-control-lg border_for_lg' placeholder='Your Company Name' />
+                                </div>
+                                <div className='row '>
+                                    <div className='col-md-6 pt-3 '>
+                                        <input className='form-control form-control-lg border_for_lg' placeholder='Industry' />
+                                    </div>
+                                    <div className='col-md-6 pt-3'>
+                                        <input className='form-control form-control-lg border_for_lg' placeholder='Your Name' />
+                                    </div>
+                                </div>
+                                <div className='col-md-12 pt-3'>
+                                    <input className='form-control form-control-lg border_for_lg' placeholder='Position' />
+                                </div>
+                                <div className='row '>
+                                    <div className='col-md-6 pt-3 '>
+                                        <input className='form-control form-control-lg border_for_lg' placeholder='Email Address' />
+                                    </div>
+                                    <div className='col-md-6 pt-3'>
+                                        <input className='form-control form-control-lg border_for_lg' placeholder='Telephone No' />
+                                    </div>
+                                </div>
+                                <div className='col-md-12 pt-3'>
+                                    <textarea className='form-control form-control-lg border_for_lg' placeholder='Message' ></textarea>
+                                </div>
+                                <div className='col-md-12 mt-3 pb-5'>
+                                    <span className='btn btn-light btn-lg button_cutome1 px-5 '>
+                                        Submit
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='col-md-6 ps-0 pe-0'>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3712.6574328185025!2d39.21010757526909!3d21.481954080283202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDI4JzU1LjAiTiAzOcKwMTInNDUuNyJF!5e0!3m2!1sen!2s!4v1731845523830!5m2!1sen!2s" style={{ height: "100%", width: "100%" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='col-md-12 text-center py-5'>
+                        <span onClick={productsbutton} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
+                            Our Products
+                        </span>
+                    </div>
 
             </div>
             <Footer />

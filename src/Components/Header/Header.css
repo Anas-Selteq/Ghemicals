@@ -260,14 +260,8 @@
     /* Set the box to stack vertically */
     overflow: hidden;
     /* Hide overflow text */
-    text-overflow: ellipsis;
-    /* Add ellipsis at the end of the truncated text */
-    -webkit-line-clamp: 3;
     /* Limit to 3 lines */
-    line-height: 1.5;
-    /* Set the line height (adjust as needed) */
-    max-height: calc(1.5em * 3);
-    /* Ensure max height matches the number of lines */
+    height: 150px;
 }
 
 .heightadjustment121 {}
@@ -314,7 +308,7 @@
     right: 10px;
 }
 
-i{
+i {
     color: #4CBB17;
 }
 
@@ -326,6 +320,17 @@ i{
 }
 
 @media only screen and (max-width: 600px) {
+    .heightadjustment {
+        display: -webkit-box;
+        /* Enable flex context for the box */
+        -webkit-box-orient: vertical;
+        /* Set the box to stack vertically */
+        overflow: hidden;
+        /* Hide overflow text */
+        /* Limit to 3 lines */
+        height: auto;
+    }
+
     .position_for_mobile {
         position: relative;
         padding-top: 20%;

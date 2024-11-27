@@ -9,3 +9,11 @@
 {
     color: black !important;
 }
+
+.background_for_contact
+{
+    background-image: url(../../../public/images/pattern.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
