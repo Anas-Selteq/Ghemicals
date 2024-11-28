@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../Components/Header/Header'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -13,11 +13,15 @@ import { IoDocumentsOutline } from 'react-icons/io5';
 import Footer from '../Components/Footer/Footer';
 import { Typewriter } from 'react-simple-typewriter';
 import { useNavigate } from 'react-router-dom';
+import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from "aos";
+
 
 function Home() {
     const [activetabs, setActivetabs] = useState(0)
     const [toggler, setToggler] = useState(false)
     const Navigate = useNavigate();
+    const [currentIndex, setCurrentIndex] = useState(0);
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -60,6 +64,31 @@ function Home() {
     const TogglerNew = () => {
         setToggler(!toggler)
     }
+
+    const words = [
+        "Your Reliable Source for Premium Chemicals—Let’s Talk Solutions!",
+        "We are One Stop Shop for all your Chemical needs!",
+        "Time to Level Up—Get in Touch and Experience Top-Quality Chemicals!",
+        "Your Perfect Chemical Solution is Just a Click Away—Get in Touch Today!",
+        "Ready to Rock Your Industry? Contact Us Today and Let’s Get Started!",
+        "Your Growth Starts Here—Send Us Your RFQ and Watch Your Business Thrive!",
+        "Let’s Supercharge Your Supply Chain—Request Your Quote NOW!"
+    ];
+
+
+    useEffect(() => {
+        AOS.init(); // Initialize AOS animations
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
+        }, 4000); // Change text every 3 seconds
+
+        return () => clearInterval(interval); // Clean up interval on unmount
+    }, []);
+
+    useEffect(() => {
+        AOS.refresh(); // Refresh AOS animations after index changes
+    }, [currentIndex]);
+
 
     const servicesRef = useRef(null);
     const productsRef = useRef(null);
@@ -109,9 +138,17 @@ function Home() {
                         />
                     </video>
                 </div>
-                <div className='col-md-12 position_for_mobile'  >
-                    <h1 className='col-md-12 text-center  m-0 color_white_text'>
-                        <b>   <Typewriter
+                <div className='col-md-12 position_for_mobile '
+
+                >
+                    <h1 className='col-md-12 text-center  m-0 color_white_text '
+                        key={currentIndex}
+                        data-aos="fade-in"
+                        data-aos-duration="1500"
+                        data-aos-delay="100"
+                    >
+                        <b>
+                            {/* <Typewriter
                             words={[
                                 "Your Reliable Source for Premium Chemicals—Let’s Talk Solutions! ",
                                 "We are One Stop Shop for all your Chemical needs!",
@@ -129,7 +166,8 @@ function Home() {
                             typeSpeed={70}
                             deleteSpeed={50}
                             delaySpeed={1000}
-                        />
+                        /> */}
+                            {words[currentIndex]}
                         </b>
                     </h1>
                     <div className='col-md-12 text-center pt-5'>
