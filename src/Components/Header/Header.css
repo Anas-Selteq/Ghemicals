@@ -312,6 +312,65 @@ i {
     color: #4CBB17;
 }
 
+
+.custom_button_selection
+{
+    background-color: rgba(255, 255, 255, 0);
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #4CBB17 !important;
+    color: white !important;
+    --bs-form-select-bg-img: url(../../../public/images/down.png);
+}
+
+.custom_button_selection:hover
+{
+    background-color: rgba(255, 255, 255, 0);
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #4CBB17 !important;
+    color: white !important;
+    --bs-form-select-bg-img: url(../../../public/images/down.png);
+
+}
+
+.custom_button_selection:focus
+{
+    background-color: rgba(255, 255, 255, 0);
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #4CBB17 !important;
+    color: white !important;
+    --bs-form-select-bg-img: url(../../../public/images/down.png);
+
+}
+
+.custom_button_selection::after
+{
+    color: white !important;
+}
+
+.custom_button_selection option {
+    color: black;
+}
+
+.flag_w_h
+{
+    width: 25px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.position_of_div
+{
+    position: absolute;
+    width: 250px;
+    z-index: 12;
+    top: 100px;
+    right: 1.5%;
+}
+
 @media (min-width: 600px) and (max-width:1000px) {
     .padding_top_card1 {
         height: 450px !important;

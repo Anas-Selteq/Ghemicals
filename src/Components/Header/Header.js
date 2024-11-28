@@ -9,11 +9,13 @@ import { IoMdCall } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Select from 'react-select';
 
 const Header = ({ onNavigate, TogglerNew, toggler }) => {
 
     const location = useLocation();
     const [show, setShow] = useState(false);
+    const [selected, setSelected] = useState('');
 
     const handleClose = () => setShow(false);
     const handleShow = () => {
@@ -23,6 +25,46 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
 
     console.log("location", location?.pathname)
     console.log("toggler", toggler)
+
+    const flags = {
+        1: '/images/uk.svg',    // Image path for UK flag
+        2: '/images/uk.svg',   // Image path for USA flag
+        3: '/images/uk.svg' // Image path for France flag
+    };
+
+    const options = [
+        {
+            value: '1',
+            label: (
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <img src={flags[1]} alt="UK Flag" style={{ width: '20px', marginRight: '10px' }} />
+                    United Kingdom
+                </div>
+            ),
+        },
+        {
+            value: '2',
+            label: (
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <img src={flags[2]} alt="USA Flag" style={{ width: '20px', marginRight: '10px' }} />
+                    United States
+                </div>
+            ),
+        },
+        {
+            value: '3',
+            label: (
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <img src={flags[3]} alt="France Flag" style={{ width: '20px', marginRight: '10px' }} />
+                    France
+                </div>
+            ),
+        },
+    ];
+
+    const handleChange = (e) => {
+        setSelected(e.target.value);
+    };
 
     return (
         <>
@@ -58,6 +100,45 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                                     </span>
                                     <span className='location_text'>info@gemicals.com</span>
                                 </a>
+                            </div>
+                            <div className='width_set5 text-center pt-3'>
+                                {/* <Select
+                                    id="flag-select"
+                                    options={options}
+                                    getOptionLabel={(e) => e.label} // Display the custom label (image + text)
+                                    styles={{
+                                        menu: (base) => ({
+                                            ...base,
+                                            // backgroundColor: 'red',   // Make dropdown body background red
+                                            zIndex: 1000,              // Set z-index to 1000
+                                        }),
+                                        option: (base) => ({
+                                            ...base,
+                                            padding: '10px',           // Option padding
+                                        }),
+                                        control: (base, state) => ({
+                                            ...base,
+                                          
+                                            borderColor:  'white' ,         // Optional: change border color when focused
+                                            color: 'white',     
+                                            backgroundColor: 'white',  
+                                            border: "1px solid white",                // Optional: change text color when focused
+                                        }),
+                                    }}
+                                /> */}
+                                {/* <button className='btn btn-success me-2 custom_button_selection'>
+                                    <img className='img-fluid flag_w_h' src='/images/usa-flag.png' />    United States
+                                </button> */}
+
+                                <select className="form-select ms-4 custom_button_selection" aria-label="Default select example">
+                                    <option selected="">English</option>
+                                    <option value={1}>Arabic</option>
+                                    <option value={2}>French</option>
+                                </select>
+
+                                {/* <div className='col-md-12 bg-success position_of_div'>
+                                    11
+                                </div> */}
                             </div>
 
                         </div>
