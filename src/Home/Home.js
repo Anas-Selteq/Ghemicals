@@ -3,10 +3,10 @@ import Header from '../Components/Header/Header'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { CiDeliveryTruck } from 'react-icons/ci';
-import { PiNuclearPlant, PiNuclearPlantLight } from 'react-icons/pi';
+import { PiHandSoap, PiNuclearPlant, PiNuclearPlantLight, PiTractor, PiTractorLight } from 'react-icons/pi';
 import { LiaDrumSteelpanSolid } from 'react-icons/lia';
 import { MdOutlineEmojiTransportation } from 'react-icons/md';
-import { GiChemicalDrop, GiDeliveryDrone, GiNuclearWaste } from 'react-icons/gi';
+import { GiCargoShip, GiChemicalDrop, GiDeliveryDrone, GiGlassShot, GiNewspaper, GiNuclearWaste } from 'react-icons/gi';
 import { RiCustomerServiceLine } from 'react-icons/ri';
 import { BiLabel } from 'react-icons/bi';
 import { IoDocumentsOutline } from 'react-icons/io5';
@@ -15,6 +15,10 @@ import { Typewriter } from 'react-simple-typewriter';
 import { useNavigate } from 'react-router-dom';
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from "aos";
+import { ImInsertTemplate } from 'react-icons/im';
+import { TbPerfume } from 'react-icons/tb';
+import { FaTruckFast, FaTruckPlane } from 'react-icons/fa6';
+import { HiBuildingOffice2 } from 'react-icons/hi2';
 
 
 function Home() {
@@ -253,7 +257,7 @@ function Home() {
 
                 <div className='col-md-12 pt-5 mt-4 display_pc '>
                     <div className='col-md-12 pb-4 text-center'>
-                        <h2><b>Welcome to <span className='color_towerld'>Industries</span></b></h2>
+                        <h2><b>Our <span className='color_towerld'>Industries</span></b></h2>
                     </div>
                     <div className='col-md-12 '>
                         <div className='row'>
@@ -266,7 +270,8 @@ function Home() {
                                 <p className='m-0 p-0 font_for_all_services'>Inks & Printing </p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
-                                <img className='img-fluid img_size_set_New' src='/images/icons/Soap & Detergent.svg' />
+                                {/* <img className='img-fluid img_size_set_New' src='/images/icons/Soap & Detergent.svg' /> */}
+                                <PiHandSoap className='font_for_icon' />
                                 <p className='m-0 p-0 font_for_all_services'>Soap & Detergent</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
@@ -282,7 +287,8 @@ function Home() {
                                 <p className='m-0 p-0 font_for_all_services'>Construction</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
-                                <img className='img-fluid img_size_set_New' src='/images/icons/Ceramic & Marble.svg' />
+                                {/* <img className='img-fluid img_size_set_New' src='/images/icons/Ceramic & Marble.svg' /> */}
+                                <ImInsertTemplate className='font_for_icon' />
                                 <p className='m-0 p-0 font_for_all_services'>Ceramic & Marble</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
@@ -290,8 +296,9 @@ function Home() {
                                 <p className='m-0 p-0 font_for_all_services'>Plastic & Polymers</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
-                                <img className='img-fluid img_size_set_New' src='/images/icons/Glass & Composites.svg' />
-                                <p className='m-0 p-0 font_for_all_services'>Glass & Composites</p>
+                                {/* <img className='img-fluid img_size_set_New' src='/images/icons/Glass & Composites.svg' /> */}
+                                <GiGlassShot className='font_for_icon' />
+                                <p className='m-0 p-0 font_for_all_services'>Glass & Glass-Fiber (Composites)</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 <img className='img-fluid img_size_set_New' src='/images/icons/Packing & Corrugate.svg' />
@@ -315,7 +322,7 @@ function Home() {
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 <img className='img-fluid img_size_set_New' src='/images/icons/Personal Care & Cosmetic.svg' />
-                                <p className='m-0 p-0 font_for_all_services'>Personal Care & Cosmetic</p>
+                                <p className='m-0 p-0 font_for_all_services'>Perfume, Personal Care & Cosmetics</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 <img className='img-fluid img_size_set_New' src='/images/icons/Mining & Drilling.svg' />
@@ -330,6 +337,9 @@ function Home() {
                                 <p className='m-0 p-0 font_for_all_services'>Metal & Alloys</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
+                                {/* <img className='img-fluid img_size_set_New' src='/images/icons/Food & Beverage.svg' /> */}
+                                <GiNewspaper className='font_for_icon' />
+                                <p className='m-0 p-0 font_for_all_services'>Pulp & Paper</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 <img className='img-fluid img_size_set_New' src='/images/icons/Food & Beverage.svg' />
@@ -337,15 +347,21 @@ function Home() {
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 <img className='img-fluid img_size_set_New' src='/images/icons/Adhesive.svg' />
-                                <p className='m-0 p-0 font_for_all_services'>Adhesive</p>
+                                <p className='m-0 p-0 font_for_all_services'>Adhesive, Sealants & Rubbers instead of Adhesive</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
-                                <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' />
-                                <p className='m-0 p-0 font_for_all_services'>Agricultural & Fertilizers</p>
+                                {/* <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' /> */}
+                                <PiTractorLight className='font_for_icon' />
+                                <p className='m-0 p-0 font_for_all_services'>Agriculture & Farming</p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 <img className='img-fluid img_size_set_New' src='/images/icons/Insecticides & Herbicides.svg' />
                                 <p className='m-0 p-0 font_for_all_services'>Insecticides & Herbicides (Pesticides)</p>
+                            </div>
+                            <div className='col-md-2 col-4 pt-4 text-center'>
+                                {/* <img className='img-fluid img_size_set_New' src='/images/icons/Food & Beverage.svg' /> */}
+                                <TbPerfume  className='font_for_icon'/>
+                                <p className='m-0 p-0 font_for_all_services'>Flavor and Fragrance</p>
                             </div>
                         </div>
                     </div>
@@ -488,7 +504,7 @@ function Home() {
                         <div className='col-md-4 mt-md-auto mt-4'>
                             <div className='col-md-12 padding_top_card'>
                                 {/* <img className='img-fluid' src='/images/s1.png' /> */}
-                                <p className='m-0 p-0 height_adjustment_icons'><CiDeliveryTruck /></p>
+                                <p className='m-0 p-0 height_adjustment_icons'><GiCargoShip /></p>
                                 <h5 className='pt-2'><b>Shipment and Import/Export Handling</b></h5>
                                 <p className='m-0 p-0 px-md-3 heightadjustment'>
                                     With a robust global network, we manage the entire import and export process, ensuring your chemicals are transported safely, securely, and in compliance with all international regulations.
@@ -497,7 +513,7 @@ function Home() {
                         </div>
                         <div className='col-md-4 mt-md-auto mt-4'>
                             <div className='col-md-12 padding_top_card'>
-                                <p className='m-0 p-0 height_adjustment_icons'><PiNuclearPlantLight /></p>
+                                <p className='m-0 p-0 height_adjustment_icons'><HiBuildingOffice2 /></p>
                                 <h5 className='pt-2'><b>Custom Clearance and Regulatory Compliance</b></h5>
                                 <p className='m-0 p-0 px-md-3 heightadjustment'>
                                     We navigate the complex paperwork and procedures involved in shipping chemicals internationally, including tariffs, duties, and taxes, so you can focus on your business.
@@ -515,7 +531,7 @@ function Home() {
                         </div>
                         <div className='col-md-4 mt-4'>
                             <div className='col-md-12 padding_top_card'>
-                                <p className='m-0 p-0 height_adjustment_icons'><MdOutlineEmojiTransportation /></p>
+                                <p className='m-0 p-0 height_adjustment_icons'><FaTruckPlane /></p>
                                 <h5 className='pt-2'><b>Handling and Transportation</b></h5>
                                 <p className='m-0 p-0 px-md-3 heightadjustment'>
                                     Our team is fully trained in the safe handling, packaging, and transportation of chemicals, ensuring that all materials are handled according to the highest safety standards.
@@ -524,7 +540,7 @@ function Home() {
                         </div>
                         <div className='col-md-4 mt-4'>
                             <div className='col-md-12 padding_top_card'>
-                                <p className='m-0 p-0 height_adjustment_icons'><GiDeliveryDrone /></p>
+                                <p className='m-0 p-0 height_adjustment_icons'><FaTruckFast /></p>
                                 <h5 className='pt-2'><b>Logistics and Distribution</b></h5>
                                 <p className='m-0 p-0 px-md-3 heightadjustment'>
                                     : We operate a fast, reliable distribution network that ensures timely delivery of chemicals to your location, no matter where you are.

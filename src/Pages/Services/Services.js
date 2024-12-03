@@ -11,13 +11,14 @@ import { GiChemicalDrop, GiNuclearWaste } from 'react-icons/gi';
 import { AiFillSafetyCertificate } from 'react-icons/ai';
 import { FaBoxesPacking } from 'react-icons/fa6';
 import Footer from '../../Components/Footer/Footer';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Services() {
     const servicesRef = useRef(null);
     const productsRef = useRef(null);
     const contactRef = useRef(null);
     const [toggler, setToggler] = useState(false)
+    const Navigate = useNavigate();
 
     const TogglerNew = () => {
         setToggler(!toggler)

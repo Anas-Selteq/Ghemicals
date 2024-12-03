@@ -3,10 +3,11 @@ import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import { LiaIndustrySolid } from 'react-icons/lia'
 import { FaArrowRight } from 'react-icons/fa'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function About() {
     const [toggler, setToggler] = useState(false)
+    const Navigate = useNavigate();
 
     const TogglerNew = () => {
         setToggler(!toggler)

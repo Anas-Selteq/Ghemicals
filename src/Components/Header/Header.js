@@ -16,6 +16,11 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
     const location = useLocation();
     const [show, setShow] = useState(false);
     const [selected, setSelected] = useState('');
+    const [ShowFlag, setShowFlag] = useState(false);
+
+    const triggernewflag = () => {
+        setShowFlag(!ShowFlag)
+    }
 
     const handleClose = () => setShow(false);
     const handleShow = () => {
@@ -101,7 +106,7 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                                     <span className='location_text'>info@gemicals.com</span>
                                 </a>
                             </div>
-                            <div className='width_set5 text-center pt-3'>
+                            <div className='width_set5 text-center px-5 pt-3'>
                                 {/* <Select
                                     id="flag-select"
                                     options={options}
@@ -130,11 +135,22 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                                     <img className='img-fluid flag_w_h' src='/images/usa-flag.png' />    United States
                                 </button> */}
 
-                                <select className="form-select ms-4 custom_button_selection" aria-label="Default select example">
-                                    <option selected="">English</option>
-                                    <option value={1}>Arabic</option>
-                                    <option value={2}>French</option>
-                                </select>
+                                <div className='col-md-12 border_for_green' onClick={triggernewflag}>
+                                    <div className='d-flex justify-content-center'>
+                                        <img className='img-fluid flag_w_h mt-2' src='/images/usa-flag.png' /><p className='m-0 py-1'> English</p>
+                                    </div>
+
+                                </div>
+                                {ShowFlag &&
+                                    <div className='width_foe_dropdown mt-2 py-1' onClick={triggernewflag}>
+                                        <div className='d-flex justify-content-center'>
+                                            <img className='img-fluid flag_w_h mt-2' src='/images/saudia-flag.png' /><p className='m-0 py-1'> Arabic</p>
+                                        </div>
+                                        <div className='d-flex justify-content-center'>
+                                            <img className='img-fluid flag_w_h mt-2' src='/images/french-flag.jpg' /><p className='m-0 py-1'> French</p>
+                                        </div>
+                                    </div>
+                                }
 
                                 {/* <div className='col-md-12 bg-success position_of_div'>
                                     11

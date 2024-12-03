@@ -26,13 +26,36 @@
 }
 
 
-
-.alignment2 {
-    text-align: center;
+.icon_green_t
+{
+    color: #4CBB17;
 }
 
 .alignment1 {
     text-align: left;
+}
+
+.border_for_green
+{
+    border: 1px solid #4CBB17;
+    color: white;
+    border-radius: 20px;
+}
+
+.width_foe_dropdown
+{
+    background-color: white;
+    position: absolute;
+    z-index: 1112;
+    width: 13%;
+    border-radius: 10px;
+    border: 2px solid #4CBB17 !important;
+}
+
+.font_for_icon
+{
+    font-size: 200%;
+    color: #23466d;
 }
 
 @media only screen and (max-width: 600px) {

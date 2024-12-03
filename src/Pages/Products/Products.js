@@ -11,13 +11,14 @@ import { PiPaintBucket } from 'react-icons/pi'
 import { MdOutlineCleaningServices, MdOutlineConstruction, MdOutlinePersonalInjury } from 'react-icons/md'
 import { IoFastFoodOutline } from 'react-icons/io5'
 import { TbPerfume } from 'react-icons/tb'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Products() {
     const servicesRef = useRef(null);
     const productsRef = useRef(null);
     const contactRef = useRef(null);
     const [toggler, setToggler] = useState(false)
+    const Navigate = useNavigate();
 
     const TogglerNew = () => {
         setToggler(!toggler)
