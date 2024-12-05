@@ -331,6 +331,12 @@ function Services() {
                     </div>
                 </div>
 
+                <div className='col-md-12 text-center py-5'>
+                    <span onClick={productsbutton} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
+                        Our Products
+                    </span>
+                </div>
+                
                 <div className='col-md-12 '>
                     <div className='col-md-12 text-center pt-5 mt-3 '>
                         <h2><b>Get In <span className='color_towerld'>Touch</span></b></h2>
@@ -376,11 +382,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div className='col-md-12 text-center py-5'>
-                    <span onClick={productsbutton} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
-                        Our Products
-                    </span>
-                </div>
+
             </div>
             <Footer />
         </div>

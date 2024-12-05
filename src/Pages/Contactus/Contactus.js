@@ -37,10 +37,10 @@ function Contactus() {
                 <div className='row'>
                     <div className='col-md-6 m-auto'>
                         <div className='col-md-12 px-5 py-4'>
-                            <h2>Contact Us</h2>
+                            {/* <h2>Contact Us</h2>
                             <p className='m-0 p-0'>
                                 At Gemicals, we’re always here to help. Whether you need product information, have a technical question, or are ready to request a quote, our team of experts is just a message or phone call away. Let’s work together to find the right chemical solutions for your business.
-                            </p>
+                            </p> */}
                             <h2 className='pt-2'>Get in Touch with Us</h2>
                             <p className='m-0 p-0'>
                                 At Gemicals, we’re always here to help. Whether you need product information, have a technical question, or are ready to request a quote, our team of experts is just a message or phone call away. Let’s work together to find the right chemical solutions for your business.

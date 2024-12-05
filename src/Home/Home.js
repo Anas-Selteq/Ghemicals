@@ -347,7 +347,7 @@ function Home() {
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 <img className='img-fluid img_size_set_New' src='/images/icons/Adhesive.svg' />
-                                <p className='m-0 p-0 font_for_all_services'>Adhesive, Sealants & Rubbers instead of Adhesive</p>
+                                <p className='m-0 p-0 font_for_all_services'>Adhesive, Sealants & Rubbers </p>
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 {/* <img className='img-fluid img_size_set_New' src='/images/icons/Agricultural & Fertilizers.svg' /> */}

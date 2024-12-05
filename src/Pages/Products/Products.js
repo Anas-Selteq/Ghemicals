@@ -52,7 +52,7 @@ function Products() {
                 <Header onNavigate={handleScrollToSection} TogglerNew={TogglerNew} toggler={toggler} />
 
                 <div className='col-md-12 padding_top_bottom_left_right_products pt-4 '>
-                    <h2><b>Welcome to<br /><span className='color_towerld'>Our Product</span></b></h2>
+                    <h2><b>Our <span className='color_towerld'>Products</span></b></h2>
                 </div>
                 <div className='col-md-12 padding_top_bottom_left_right_products mb-5'>
                     <div className='col-md-12  mt-md-5'>
@@ -329,11 +329,11 @@ function Products() {
                     </div>
                 </div>
 
-                <div className='col-md-12 text-center py-5'>
+                {/* <div className='col-md-12 text-center py-5'>
                         <span onClick={productsbutton} className='btn btn-light btn-lg button_cutome_black px-5 mt-3'>
                             Our Products
                         </span>
-                    </div>
+                    </div> */}
 
             </div>
             <Footer />

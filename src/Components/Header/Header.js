@@ -95,7 +95,7 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                                     <span className='widdth_height_bg'>
                                         <IoMdCall />
                                     </span>
-                                    <span className='location_text'>Call: +966 53 277 6424</span>
+                                    <span className='location_text'>+966 53 277 6424</span>
                                 </a>
                             </div>
                             <div className='width_set5 pt-3'>
