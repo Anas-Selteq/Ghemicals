@@ -15,18 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .fade-text {
+}
+
+.fade-text {
     font-size: 24px;
     font-weight: bold;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
-  
-  .fade-container .fade-text {
+}
+
+.fade-container .fade-text {
     opacity: 1;
-  }
+}
 
 .overflow_stop {
     overflow-x: hidden !important;
@@ -129,6 +129,13 @@
     padding-right: 10%;
 }
 
+.button_srcondary_position {
+    position: fixed;
+    bottom: 15px;
+    z-index: 11111;
+    width: 100%;
+}
+
 .button_cutome {
     background-color: white !important;
     border-radius: 8px !important;
@@ -157,7 +164,7 @@
 }
 
 .border_for_image {
-    border: 3px solid #DA7426;
+    border: 3px solid #4CBB17;
     border-radius: 10px;
 }
 
@@ -314,7 +321,34 @@
 
 .position_for_mobile {
     position: absolute;
-    top: 50%
+    top: 46%
+}
+
+.vedioPlayer {
+    height: 300px;
+    /* Set the desired height */
+    width: auto;
+    /* Keep the width proportional to the height */
+}
+
+.vedioPlayer {
+    width: 100%;
+    /* Makes the video responsive */
+    max-height: 550px;
+    /* Limits the height */
+    object-fit: cover;
+    /* Optional: ensures the video covers the area, but may crop */
+}
+
+
+.backtotopbutton
+{
+    background-color: #4CBB17 !important;
+    height: 50px !important;
+    width: 50px !important;
+    padding: 0px !important;
+    border-radius: 50px !important;
+    font-size: 17px !important;
 }
 
 .padding_top_card1 {
@@ -333,8 +367,7 @@ i {
 }
 
 
-.custom_button_selection
-{
+.custom_button_selection {
     background-color: rgba(255, 255, 255, 0);
     width: 80%;
     border-radius: 20px;
@@ -343,19 +376,7 @@ i {
     --bs-form-select-bg-img: url(../../../public/images/down.png);
 }
 
-.custom_button_selection:hover
-{
-    background-color: rgba(255, 255, 255, 0);
-    width: 80%;
-    border-radius: 20px;
-    border: 1px solid #4CBB17 !important;
-    color: white !important;
-    --bs-form-select-bg-img: url(../../../public/images/down.png);
-
-}
-
-.custom_button_selection:focus
-{
+.custom_button_selection:hover {
     background-color: rgba(255, 255, 255, 0);
     width: 80%;
     border-radius: 20px;
@@ -365,8 +386,17 @@ i {
 
 }
 
-.custom_button_selection::after
-{
+.custom_button_selection:focus {
+    background-color: rgba(255, 255, 255, 0);
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #4CBB17 !important;
+    color: white !important;
+    --bs-form-select-bg-img: url(../../../public/images/down.png);
+
+}
+
+.custom_button_selection::after {
     color: white !important;
 }
 
@@ -374,16 +404,14 @@ i {
     color: black;
 }
 
-.flag_w_h
-{
+.flag_w_h {
     width: 25px;
     height: 15px;
     margin-right: 10px;
     border-radius: 3px;
 }
 
-.position_of_div
-{
+.position_of_div {
     position: absolute;
     width: 250px;
     z-index: 12;

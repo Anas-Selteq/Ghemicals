@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../Header/Header.css"
 import { IoLocationSharp, IoMenu } from "react-icons/io5";
 import { RxCross2 } from 'react-icons/rx';
-import { FaFacebookF, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { Link, useLocation } from 'react-router-dom';
 import { IoMdCall } from 'react-icons/io';
@@ -88,6 +88,14 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                                         <IoLocationSharp />
                                     </span>
                                     <span className='location_text'>JINC3475</span>
+                                </a>
+                            </div>
+                            <div className=' width_set3 pt-3' >
+                                <a className='text_dec_stop' href="https://wa.me/+966532776424" target='_blank'>
+                                    <span className='widdth_height_bg'>
+                                        <FaWhatsapp />
+                                    </span>
+                                    <span className='location_text'>+966 53 277 6424</span>
                                 </a>
                             </div>
                             <div className=' width_set3 pt-3' >

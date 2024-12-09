@@ -17,8 +17,9 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from "aos";
 import { ImInsertTemplate } from 'react-icons/im';
 import { TbPerfume } from 'react-icons/tb';
-import { FaTruckFast, FaTruckPlane } from 'react-icons/fa6';
+import { FaArrowUpLong, FaTruckFast, FaTruckPlane } from 'react-icons/fa6';
 import { HiBuildingOffice2 } from 'react-icons/hi2';
+import { FaAngleDoubleUp } from 'react-icons/fa';
 
 
 function Home() {
@@ -45,6 +46,36 @@ function Home() {
             items: 1
         }
     };
+    const [showButton, setShowButton] = useState(false);
+
+    // Handle the scroll event to track the scroll position
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY; // Get the current scroll position
+        const windowHeight = window.innerHeight; // Get the window's height
+        const documentHeight = document.documentElement.scrollHeight; // Get the total document height
+
+        // Show the button when the user scrolls past 10% of the page
+        if (scrollPosition / (documentHeight - windowHeight) > 0.1) {
+            setShowButton(true);
+        } else {
+            setShowButton(false);
+        }
+    };
+
+    // Scroll to the top of the page when the button is clicked
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    useEffect(() => {
+        // Add event listener for scroll event
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const responsive_2 = {
         superLargeDesktop: {
@@ -131,7 +162,13 @@ function Home() {
     return (
         <div className='col-md-12 overflow_stop'>
             <Header onNavigate={handleScrollToSection} TogglerNew={TogglerNew} toggler={toggler} />
-
+            {showButton && (
+                <div className='col-md-12 button_srcondary_position text-end px-3'>
+                    <button className='btn btn-secondary backtotopbutton' onClick={scrollToTop}>
+                        <FaArrowUpLong />
+                    </button>
+                </div>)
+            }
             {/* Section 1 ------------------------------------------------------- */}
             <div className='col-md-12 '>
                 <div className='display_pc' >
@@ -360,7 +397,7 @@ function Home() {
                             </div>
                             <div className='col-md-2 col-4 pt-4 text-center'>
                                 {/* <img className='img-fluid img_size_set_New' src='/images/icons/Food & Beverage.svg' /> */}
-                                <TbPerfume  className='font_for_icon'/>
+                                <TbPerfume className='font_for_icon' />
                                 <p className='m-0 p-0 font_for_all_services'>Flavor and Fragrance</p>
                             </div>
                         </div>
