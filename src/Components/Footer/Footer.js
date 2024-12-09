@@ -26,7 +26,7 @@ function Footer() {
                         <p className='m-0 p-0 text-light pb-4 pt-2'><b>Contact Details</b></p>
 
                         <a className='text_dec_stop ' href="https://wa.me/+966532776424" target='_blank'> <p className='m-0 p-0 pt-1 '><FaWhatsapp className='icon_green_t' /> &nbsp;+966 53 277 6424</p> </a>
-                        <a className='text_dec_stop ' href="tel:+966532776424"> <p className='m-0 p-0 pt-1 '><FaPhoneAlt className='icon_green_t' /> &nbsp;+966 53 277 6424</p> </a>
+                        {/* <a className='text_dec_stop ' href="tel:+966532776424"> <p className='m-0 p-0 pt-1 '><FaPhoneAlt className='icon_green_t' /> &nbsp;+966 53 277 6424</p> </a> */}
                         <a className='text_dec_stop' href="mailto:info@gemicals.com">   <p className='m-0 p-0 pt-2 '><IoMail className='icon_green_t' /> &nbsp;info@gemicals.com</p> </a>
                         <a className='text_dec_stop' target="_blank" href="https://www.google.com/maps?ll=21.481954,39.210108&z=15&t=m&hl=en&gl=US&mapclient=embed&q=21%C2%B028%2755.0%22N+39%C2%B012%2745.7%22E+21.481944,+39.212694@21.4819444,39.2126944">   <p className='m-0 p-0 pt-2 '><FaLocationDot className='icon_green_t' /> &nbsp; Greenland Est. for Chemicals - GEMICALS
                             3475 Old Makkah Branch Road

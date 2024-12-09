@@ -20,6 +20,7 @@ import { TbPerfume } from 'react-icons/tb';
 import { FaArrowUpLong, FaTruckFast, FaTruckPlane } from 'react-icons/fa6';
 import { HiBuildingOffice2 } from 'react-icons/hi2';
 import { FaAngleDoubleUp } from 'react-icons/fa';
+import { IoMdCall } from 'react-icons/io';
 
 
 function Home() {
@@ -168,7 +169,17 @@ function Home() {
                         <FaArrowUpLong />
                     </button>
                 </div>)
+
             }
+
+            <div className='col-md-12 button_srcondary_position111 text-end px-3'>
+                <a className='text_dec_stop' target="_blank" href="https://www.google.com/maps?ll=21.481954,39.210108&z=15&t=m&hl=en&gl=US&mapclient=embed&q=21%C2%B028%2755.0%22N+39%C2%B012%2745.7%22E+21.481944,+39.212694@21.4819444,39.2126944">
+
+                    <button className='btn btn-secondary backtotopbutton' onClick={scrollToTop}>
+                        <IoMdCall />
+                    </button>
+                </a>
+            </div>
             {/* Section 1 ------------------------------------------------------- */}
             <div className='col-md-12 '>
                 <div className='display_pc' >

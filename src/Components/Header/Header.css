@@ -136,6 +136,13 @@
     width: 100%;
 }
 
+.button_srcondary_position111 {
+    position: fixed;
+    bottom: 75px;
+    z-index: 11111;
+    width: 100%;
+}
+
 .button_cutome {
     background-color: white !important;
     border-radius: 8px !important;

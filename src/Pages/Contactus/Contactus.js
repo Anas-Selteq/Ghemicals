@@ -47,7 +47,7 @@ function Contactus() {
                             </p>
                             <div className='col-md-12 '>
                                 <a className='text_dec_stop text_new_d' href="https://wa.me/+966532776424" target='_blank'> <p className='m-0 p-0 pt-2'> <FaWhatsapp  /> +966 53 277 6424</p> </a>
-                                <a className='text_dec_stop text_new_d' href="tel:+966532776424"> <p className='m-0 p-0 pt-2'> <FaPhoneAlt /> +966 53 277 6424</p> </a>
+                                {/* <a className='text_dec_stop text_new_d' href="tel:+966532776424"> <p className='m-0 p-0 pt-2'> <FaPhoneAlt /> +966 53 277 6424</p> </a> */}
                                 <a className='text_dec_stop text_new_d' href="mailto:info@gemicals.com">   <p className='m-0 p-0 pt-2'> <IoMail /> info@gemicals.com</p> </a>
                                 <a className='text_dec_stop text_new_d' target="_blank" href="https://www.google.com/maps?ll=21.481954,39.210108&z=15&t=m&hl=en&gl=US&mapclient=embed&q=21%C2%B028%2755.0%22N+39%C2%B012%2745.7%22E+21.481944,+39.212694@21.4819444,39.2126944"> <p className='m-0 p-0 pt-2'> <FaLocationDot /> JINC3475
                                 </p> </a>

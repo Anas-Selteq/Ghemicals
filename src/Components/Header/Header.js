@@ -98,14 +98,14 @@ const Header = ({ onNavigate, TogglerNew, toggler }) => {
                                     <span className='location_text'>+966 53 277 6424</span>
                                 </a>
                             </div>
-                            <div className=' width_set3 pt-3' >
+                            {/* <div className=' width_set3 pt-3' >
                                 <a className='text_dec_stop' href="tel:+966532776424">
                                     <span className='widdth_height_bg'>
                                         <IoMdCall />
                                     </span>
                                     <span className='location_text'>+966 53 277 6424</span>
                                 </a>
-                            </div>
+                            </div> */}
                             <div className='width_set5 pt-3'>
                                 <a className='text_dec_stop' href="mailto:info@gemicals.com">
                                     <span className='widdth_height_bg'>
